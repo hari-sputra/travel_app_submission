@@ -73,38 +73,41 @@ class HomePage extends StatelessWidget {
         margin: const EdgeInsets.only(top: 25, right: 30, left: 30),
         child: Row(
           children: [
-            Container(
-              margin: const EdgeInsets.only(right: 9),
-              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 12),
-              height: 45,
-              width: 261,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: youngGreyColor,
-              ),
-              child: Row(
-                children: [
-                  Image.asset(
-                    "assets/icons/search.png",
-                    width: 24,
-                  ),
-                  const SizedBox(
-                    width: 12,
-                  ),
-                  Expanded(
-                    child: TextField(
-                      style: greyTextStyle.copyWith(),
-                      cursorColor: greyColor,
-                      decoration: InputDecoration(
-                        hintText: "Search your favorite place here.",
-                        hintStyle: greyTextStyle.copyWith(
-                          fontSize: 12,
+            Expanded(
+              child: Container(
+                margin: const EdgeInsets.only(right: 9),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 10, horizontal: 12),
+                height: 45,
+                // width: 250,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  color: youngGreyColor,
+                ),
+                child: Row(
+                  children: [
+                    Image.asset(
+                      "assets/icons/search.png",
+                      width: 24,
+                    ),
+                    const SizedBox(
+                      width: 12,
+                    ),
+                    Expanded(
+                      child: TextField(
+                        style: greyTextStyle.copyWith(),
+                        cursorColor: greyColor,
+                        decoration: InputDecoration(
+                          hintText: "Search your favorite place here.",
+                          hintStyle: greyTextStyle.copyWith(
+                            fontSize: 12,
+                          ),
+                          border: InputBorder.none,
                         ),
-                        border: InputBorder.none,
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             Container(
